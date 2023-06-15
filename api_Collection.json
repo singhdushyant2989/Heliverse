@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "9c9829c1-a9e1-4b1f-bb20-b7efd299c7b8",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26970823"
+	},
+	"item": [
+		{
+			"name": "Get Result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/quizzes/id/result",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"quizzes",
+						"id",
+						"result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ques",
+							"value": "What is 12/2?",
+							"type": "text"
+						},
+						{
+							"key": "option",
+							"value": "[8, 25, 5, 6]",
+							"type": "text"
+						},
+						{
+							"key": "ans",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "stdate",
+							"value": "2023-06-15T12:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "endate",
+							"value": "2023-06-16T12:00:00Z",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "result",
+							"value": "100%",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/quizzes",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Active Quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/quizzes/active",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"quizzes",
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/quizzes/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"quizzes",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
